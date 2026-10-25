@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tìm kiếm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <!-- Thanh trên cùng: lời chào + nút đăng xuất -->
+    <div class="top-bar">
+      <span>Xin chào, <strong id="welcome"></strong></span>
+      <button id="logout-btn">Đăng xuất</button>
+    </div>
+
+    <h1>Tìm kiếm</h1>
+
+    <input type="text" id="search-input" placeholder="Gõ để tìm (vd: python, html...)">
+
+    <p class="message" id="count"></p>
+
+    <!-- Danh sách kết quả sẽ được JavaScript tạo ra ở đây -->
+    <ul class="result-list" id="result-list"></ul>
+  </div>
+
+  <script src="search.js"></script>
+</body>
+</html>
